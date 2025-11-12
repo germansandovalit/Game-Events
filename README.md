@@ -55,6 +55,7 @@ DISCORD_GUILD_EVENTS_ROLE_ID=@Guild Events
   }
   ```
 - [ ] Modificar la estructura de `messages.json` para **agrupar los eventos por nombre**, moviendo las propiedades comunes al nivel superior y dejando solo las instancias con sus horarios, días y estado de envío (`sent`).  
+Tener en cuenta que esto implica **adaptar el código dentro del `setInterval`** para recorrer la nueva estructura agrupada y actualizar correctamente el estado `sent: true` en cada instancia cuando el evento haya sido enviado. 
 
   Ejemplo propuesto (Podes proponer otras o mejores formas de hacerlo):
   ```json
