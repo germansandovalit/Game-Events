@@ -30,8 +30,7 @@ DISCORD_GUILD_EVENTS_ROLE_ID=@Guild Events
 ## 🗺️ Roadmap / Próximas Funcionalidades
 
 ### 🧩 Mejoras Planeadas
-- [ ] Actualizar el comando `!eventos` para **agrupar los eventos por nombre**.  
-- [ ] Actualizar el comando `!eventos` para mostrar una **tabla resumida** con las siguientes columnas:  
+- [ ] Actualizar el comando `!eventos` para mostrar una **tabla agrupando los eventos por nombre** con las siguientes columnas:  
   | Nombre de Evento | Recompensa | Próximo Evento |
   |------------------|-------------|----------------|
   | *Ejemplo:* Street Theater | Friendship Points | <t:1731452400:R> (<t:1731452400:t>) |
