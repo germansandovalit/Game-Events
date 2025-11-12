@@ -41,6 +41,18 @@ DISCORD_GUILD_EVENTS_ROLE_ID=@Guild Events
   - @Guild Events  
   - @Asteria Reputation  
   - @Friendship Points  
-
+- [ ] Modificar la estructura de `messages.json` para **agrupar los eventos por nombre**, almacenando dentro de cada uno una lista de instancias.  
+  Ejemplo propuesto:
+  ```json
+  {
+    "Street Theater": {
+      "type": "Friendship",
+      "instances": [
+        { "day": [2,4,6,7], "startHour": 14, "startMinute": 0, "durationHours": 1, "notificationGracePeriodInMinutes": 5, "image": "streettheater.png" },
+        { "day": [1,3], "startHour": 20, "startMinute": 30, "durationHours": 1, "notificationGracePeriodInMinutes": 5, "image": "streettheater.png" }
+      ]
+    }
+  }
+```
 
 
