@@ -35,6 +35,12 @@ DISCORD_GUILD_EVENTS_ROLE_ID=@Guild Events
   | Nombre de Evento | Recompensa | Próximo Evento |
   |------------------|-------------|----------------|
   | *Ejemplo:* Street Theater | Friendship Points | <t:1731452400:R> (<t:1731452400:t>) |
-- [ ] Calcular automáticamente el **próximo evento** usando la fecha relativa y formato UNIX.  
+- [ ] Permitir que los usuarios puedan **agregar o quitar roles** mediante comandos del bot.  
+  Roles disponibles:  
+  - @Eventos  
+  - @Guild Events  
+  - @Asteria Reputation  
+  - @Friendship Points  
+
 
 
