@@ -25,6 +25,7 @@ DISCORD_EVENTS_ROLE_ID=@Eventos
 DISCORD_FRIENDSHIP_ROLE_ID=@Friendship Points
 DISCORD_REPUTATION_ROLE_ID=@Asteria Reputation
 DISCORD_GUILD_EVENTS_ROLE_ID=@Guild Events
+```
 
 ## 🗺️ Roadmap / Próximas Funcionalidades
 
