@@ -25,3 +25,15 @@ DISCORD_EVENTS_ROLE_ID=@Eventos
 DISCORD_FRIENDSHIP_ROLE_ID=@Friendship Points
 DISCORD_REPUTATION_ROLE_ID=@Asteria Reputation
 DISCORD_GUILD_EVENTS_ROLE_ID=@Guild Events
+
+## 🗺️ Roadmap / Próximas Funcionalidades
+
+### 🧩 Mejoras Planeadas
+- [ ] Actualizar el comando `!eventos` para **agrupar los eventos por nombre**.  
+- [ ] Mostrar una **tabla resumida** con las siguientes columnas:  
+  | Nombre de Evento | Recompensa | Próximo Evento |
+  |------------------|-------------|----------------|
+  | *Ejemplo:* Street Theater | Friendship | <t:1731452400:R> (<t:1731452400:t>) |
+- [ ] Calcular automáticamente el **próximo evento** usando la fecha relativa y formato UNIX.  
+
+
