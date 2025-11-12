@@ -41,7 +41,7 @@ DISCORD_GUILD_EVENTS_ROLE_ID=@Guild Events
   - @Guild Events  
   - @Asteria Reputation  
   - @Friendship Points  
-  - [ ] Agregar un nuevo archivo `roles.json` que defina los roles disponibles para ser **otorgados o removidos** por el bot, permitiendo su configuración sin modificar el código fuente.  
+- [ ] Agregar un nuevo archivo `roles.json` que defina los roles disponibles para ser **otorgados o removidos** por el bot, permitiendo su configuración sin modificar el código fuente.  
 
   Ejemplo de `roles.json`:
   ```json
