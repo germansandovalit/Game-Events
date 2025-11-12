@@ -41,6 +41,19 @@ DISCORD_GUILD_EVENTS_ROLE_ID=@Guild Events
   - @Guild Events  
   - @Asteria Reputation  
   - @Friendship Points  
+  - [ ] Agregar un nuevo archivo `roles.json` que defina los roles disponibles para ser **otorgados o removidos** por el bot, permitiendo su configuración sin modificar el código fuente.  
+
+  Ejemplo de `roles.json`:
+  ```json
+  {
+    "roles": [
+      { "name": "Eventos", "id": "DISCORD_EVENTS_ROLE_ID" },
+      { "name": "Guild Events", "id": "DISCORD_GUILD_EVENTS_ROLE_ID" },
+      { "name": "Asteria Reputation", "id": "DISCORD_REPUTATION_ROLE_ID" },
+      { "name": "Friendship Points", "id": "DISCORD_FRIENDSHIP_ROLE_ID" }
+    ]
+  }
+```
 - [ ] Modificar la estructura de `messages.json` para **agrupar los eventos por nombre**, moviendo las propiedades comunes al nivel superior y dejando solo las instancias con sus horarios, días y estado de envío (`sent`).  
 
   Ejemplo propuesto (Podes proponer otras o mejores formas de hacerlo):
