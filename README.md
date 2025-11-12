@@ -41,15 +41,22 @@ DISCORD_GUILD_EVENTS_ROLE_ID=@Guild Events
   - @Guild Events  
   - @Asteria Reputation  
   - @Friendship Points  
-- [ ] Modificar la estructura de `messages.json` para **agrupar los eventos por nombre**, almacenando dentro de cada uno una lista de instancias.  
-  Ejemplo propuesto:
+- [ ] Modificar la estructura de `messages.json` para **agrupar los eventos por nombre**, moviendo las propiedades comunes al nivel superior y dejando solo las instancias con sus horarios, días y estado de envío (`sent`).  
+  También se agregan nuevas instancias y se remueve la instancia anterior.  
+
+  Ejemplo actualizado:
   ```json
   {
     "Street Theater": {
       "type": "Friendship",
+      "durationHours": 1,
+      "image": "streettheater.png",
+      "notificationGracePeriodInMinutes": 5,
       "instances": [
-        { "day": [2,4,6,7], "startHour": 14, "startMinute": 0, "durationHours": 1, "notificationGracePeriodInMinutes": 5, "image": "streettheater.png" },
-        { "day": [1,3], "startHour": 20, "startMinute": 30, "durationHours": 1, "notificationGracePeriodInMinutes": 5, "image": "streettheater.png" }
+        { "day": [2,4,6,7], "startHour": 14, "startMinute": 0, "sent": false },
+        { "day": [2,4,6,7], "startHour": 16, "startMinute": 0, "sent": false },
+        { "day": [2,4,6,7], "startHour": 19, "startMinute": 0, "sent": false },
+        { "day": [2,4,6,7], "startHour": 22, "startMinute": 0, "sent": false }
       ]
     }
   }
