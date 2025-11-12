@@ -53,7 +53,7 @@ DISCORD_GUILD_EVENTS_ROLE_ID=@Guild Events
       { "name": "Friendship Points", "id": "DISCORD_FRIENDSHIP_ROLE_ID" }
     ]
   }
-```
+  ```
 - [ ] Modificar la estructura de `messages.json` para **agrupar los eventos por nombre**, moviendo las propiedades comunes al nivel superior y dejando solo las instancias con sus horarios, días y estado de envío (`sent`).  
 
   Ejemplo propuesto (Podes proponer otras o mejores formas de hacerlo):
