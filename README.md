@@ -42,9 +42,8 @@ DISCORD_GUILD_EVENTS_ROLE_ID=@Guild Events
   - @Asteria Reputation  
   - @Friendship Points  
 - [ ] Modificar la estructura de `messages.json` para **agrupar los eventos por nombre**, moviendo las propiedades comunes al nivel superior y dejando solo las instancias con sus horarios, días y estado de envío (`sent`).  
-  También se agregan nuevas instancias y se remueve la instancia anterior.  
 
-  Ejemplo actualizado:
+  Ejemplo propuesto (Podes proponer otras o mejores formas de hacerlo):
   ```json
   {
     "Street Theater": {
