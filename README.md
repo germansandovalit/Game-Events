@@ -59,4 +59,3 @@ DISCORD_GUILD_EVENTS_ROLE_ID=@Guild Events
       ]
     }
   }
-```
