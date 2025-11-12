@@ -21,7 +21,7 @@ Bot de Discord que anuncia automáticamente eventos programados según el horari
 DISCORD_TOKEN=your_discord_bot_token
 DISCORD_SERVER_ID=your_server_id
 DISCORD_EVENTS_CHANNEL_ID=channel_id
-DISCORD_EVENTS_ROLE_ID=@EventsRole
-DISCORD_FRIENDSHIP_ROLE_ID=@FriendshipRole
-DISCORD_REPUTATION_ROLE_ID=@ReputationRole
-DISCORD_GUILD_EVENTS_ROLE_ID=@GuildEventsRole
+DISCORD_EVENTS_ROLE_ID=@Eventos
+DISCORD_FRIENDSHIP_ROLE_ID=@Friendship Points
+DISCORD_REPUTATION_ROLE_ID=@Asteria Reputation
+DISCORD_GUILD_EVENTS_ROLE_ID=@Guild Events
