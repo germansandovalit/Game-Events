@@ -57,19 +57,19 @@ DISCORD_GUILD_EVENTS_ROLE_ID=@Guild Events
 - [ ] Modificar la estructura de `messages.json` para **agrupar los eventos por nombre**, moviendo las propiedades comunes al nivel superior y dejando solo las instancias con sus horarios, días y estado de envío (`sent`).  
 Tener en cuenta que esto implica **adaptar el código dentro del `setInterval`** para recorrer la nueva estructura agrupada y actualizar correctamente el estado `sent: true` en cada instancia cuando el evento haya sido enviado. 
 
-  Ejemplo propuesto (Podes proponer otras o mejores formas de hacerlo):
-  ```json
-  {
-    "Street Theater": {
-      "type": "Friendship",
-      "durationHours": 1,
-      "image": "streettheater.png",
-      "notificationGracePeriodInMinutes": 5,
-      "instances": [
-        { "day": [2,4,6,7], "startHour": 14, "startMinute": 0, "sent": false },
-        { "day": [2,4,6,7], "startHour": 16, "startMinute": 0, "sent": false },
-        { "day": [2,4,6,7], "startHour": 19, "startMinute": 0, "sent": false },
-        { "day": [2,4,6,7], "startHour": 22, "startMinute": 0, "sent": false }
-      ]
-    }
-  }
+  Ejemplo propuesto
+
+```json
+{
+  "name": "Street Theater",
+  "type": "Friendship",
+  "durationHours": 1,
+  "image": "streettheater.png",
+  "notificationGracePeriodInMinutes": 5,
+  "instances": [
+    { "day": [2, 4, 6, 7], "startHour": 14, "startMinute": 0, "sent": false },
+    { "day": [2, 4, 6, 7], "startHour": 16, "startMinute": 0, "sent": false },
+    { "day": [2, 4, 6, 7], "startHour": 19, "startMinute": 0, "sent": false },
+    { "day": [2, 4, 6, 7], "startHour": 22, "startMinute": 0, "sent": false }
+  ]
+}
