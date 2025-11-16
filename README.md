@@ -33,7 +33,7 @@ DISCORD_GUILD_EVENTS_ROLE_ID=@Guild Events
 - [ ] Actualizar el comando `!eventos` para mostrar una **tabla agrupando los eventos por nombre** con las siguientes columnas:  
   | Nombre de Evento | Recompensa | Próximo Evento |
   |------------------|-------------|----------------|
-  | *Ejemplo:* Street Theater | Friendship Points | <t:1731452400:R> (<t:1731452400:t>) |
+  | *Ejemplo:* Street Theater | Friendship Points | <t:1731452400:R> | 
 - [ ] Permitir que los usuarios puedan **agregar o quitar roles** mediante comandos del bot. [Documentacion](https://support-apps.discord.com/hc/en-us/articles/26501837786775-Slash-Commands-FAQ)
 
   Roles disponibles:  
