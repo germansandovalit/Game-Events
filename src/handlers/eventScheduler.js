@@ -10,7 +10,8 @@ const getBuenosAiresDate = () => {
 
 const isEventDueNow = (message, instanceIndex) => {
     let targetHours = message.instances[instanceIndex].startHour;
-    let targetMinutes = message.instances[instanceIndex].startMinute - message.notificationGracePeriodInMinutes;
+    let notificationGracePeriodInMinutes = message.instances[instanceIndex].notificationGracePeriodInMinutes ?? message.notificationGracePeriodInMinutes
+    let targetMinutes = message.instances[instanceIndex].startMinute - notificationGracePeriodInMinutes;
     
     if (targetMinutes < 0) {
         targetHours = message.instances[instanceIndex].startHour - 1;
