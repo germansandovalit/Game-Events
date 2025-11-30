@@ -24,7 +24,7 @@ const isEventDueNow = (message, instanceIndex) => {
            message.instances[instanceIndex].sent === false;
 };
 
-const sendEventMessage = async (client, message) => {
+const sendEventMessage = async (client, message, instanceIndex) => {
     try {
         const channel = client.guilds.cache.get(DISCORD_CONFIG.serverId)
             .channels.cache.get(DISCORD_CONFIG.eventsChannelId);
@@ -35,7 +35,7 @@ const sendEventMessage = async (client, message) => {
             description: message.image,
         };
 
-        const contentToSend = createMessageForDueEvent(message);
+        const contentToSend = createMessageForDueEvent(message, instanceIndex);
         
         await channel.send({ files: [fileToSend], content: contentToSend });
     } catch (e) {
@@ -43,7 +43,8 @@ const sendEventMessage = async (client, message) => {
     }
 };
 
-const createMessageForDueEvent = (message) => {
+const createMessageForDueEvent = (message, instanceIndex) => {
+    let notificationGracePeriodInMinutes = message.instances[instanceIndex].notificationGracePeriodInMinutes ?? message.notificationGracePeriodInMinutes
     let messageToSend = `${DISCORD_CONFIG.eventsRoleId} `
     switch (message.type){
         case "Reputation":
@@ -56,7 +57,7 @@ const createMessageForDueEvent = (message) => {
             messageToSend += `${DISCORD_CONFIG.guildEventsRoleId} `
             break;
     }
-    messageToSend += `${message.name} en ${message.notificationGracePeriodInMinutes} minutos`
+    messageToSend += `${message.name} en ${notificationGracePeriodInMinutes} minutos`
     return messageToSend
 }
 
