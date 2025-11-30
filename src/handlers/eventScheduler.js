@@ -88,7 +88,7 @@ const startEventScheduler = (client) => {
                 const message = scheduledMessages[i];
                 
                 if (isEventDueNow(message, j)) {
-                    await sendEventMessage(client, message);
+                    await sendEventMessage(client, message, j);
                     scheduledMessages[i].instances[j].sent = true;
                 }
             }
