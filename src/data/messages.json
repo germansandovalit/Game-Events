@@ -141,5 +141,36 @@
       { "day": [1, 2, 3, 4, 5, 6, 7], "startHour": 14, "startMinute": 0, "sent": false },
       { "day": [1, 2, 3, 4, 5, 6, 7], "startHour": 19, "startMinute": 0, "sent": false }
     ]
+  },
+  {
+    "name": "Spirit Dance",
+    "type": "Kanamia",
+    "durationHours": 0.16,
+    "image": "spiritdance.png",
+    "notificationGracePeriodInMinutes": 5,
+    "instances": [
+      { "day": [5, 6, 7], "startHour": 9, "startMinute": 44, "sent": false},
+      { "day": [5, 6, 7], "startHour": 10, "startMinute": 8, "sent": false },
+      { "day": [5, 6, 7], "startHour": 12, "startMinute": 56, "sent": false },
+      { "day": [5, 6, 7], "startHour": 13, "startMinute": 20, "sent": false },
+      { "day": [5, 6, 7], "startHour": 16, "startMinute": 8, "sent": false },
+      { "day": [5, 6, 7], "startHour": 16, "startMinute": 32, "sent": false },
+      { "day": [5, 6, 7], "startHour": 19, "startMinute": 20, "sent": false },
+      { "day": [5, 6, 7], "startHour": 19, "startMinute": 44, "sent": false },
+      { "day": [5, 6, 7], "startHour": 22, "startMinute": 32, "sent": false },
+      { "day": [5, 6, 7], "startHour": 22, "startMinute": 56, "sent": false }
+    ]
+  },
+  {
+    "name": "Spirit Dance",
+    "type": "Kanamia",
+    "durationHours": 5,
+    "image": "harvestfeast.png",
+    "notificationGracePeriodInMinutes": 5,
+    "instances": [
+      { "day": [1, 2, 3, 4, 5, 6, 7], "startHour": 11, "startMinute": 0, "sent": false},
+      { "day": [1, 2, 3, 4, 5, 6, 7], "startHour": 17, "startMinute": 0, "sent": false},
+      { "day": [1, 2, 3, 4, 5, 6, 7], "startHour": 23, "startMinute": 0, "sent": false}
+    ]
   }
 ]

@@ -46,7 +46,8 @@ const sendEventMessage = async (client, message, instanceIndex) => {
 const createMessageForDueEvent = (message, instanceIndex) => {
     let notificationGracePeriodInMinutes = message.instances[instanceIndex].notificationGracePeriodInMinutes ?? message.notificationGracePeriodInMinutes
     let messageToSend = `${DISCORD_CONFIG.eventsRoleId} `
-    switch (message.type){
+    let messageType = message.type ?? ""
+    switch (messageType){
         case "Reputation":
             messageToSend += `${DISCORD_CONFIG.reputationRoleId} `
             break;
