@@ -71,15 +71,15 @@ const getEventEmbed = (events, weekDay) => {
             value: events.map(e => `• ${e.name}`).join('\n'),
             inline: true
         });
-
+        /*
         embed.addFields({
-            name: 'Points',
+            name: 'Recompensa',
             value: `${events.map(e => e.type).join('\n')}`,
             inline: true
         });
-
+        */ 
         embed.addFields({
-            name: 'Horario',
+            name: "Proximo Evento",
             value: events.map(event => getTimeInfo(event)).join('\n'),
             inline: true
         });
