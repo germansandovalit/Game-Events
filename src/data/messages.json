@@ -133,7 +133,7 @@
   },
   {
     "name": "Parade! Boarlet Knight",
-    "type": "Reputation",
+    "type": "Friendship",
     "image": "paradeboarletknight.png",
     "durationHours": 2,
     "notificationGracePeriodInMinutes": 5,
@@ -147,7 +147,7 @@
   },
   {
     "name": "Parade! Charming Fish",
-    "type": "Reputation",
+    "type": "Friendship",
     "image": "paradecharmingfish.png",
     "durationHours": 2,
     "notificationGracePeriodInMinutes": 5,
