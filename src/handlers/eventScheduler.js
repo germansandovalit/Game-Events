@@ -18,7 +18,8 @@ const isEventDueNow = (message, instanceIndex) => {
         targetMinutes = 60 - Math.abs(targetMinutes);
     }
 
-    return message.instances[instanceIndex].day.includes(currentDate.weekday) &&
+    return message.enabled == true && 
+           message.instances[instanceIndex].day.includes(currentDate.weekday) &&
            targetHours === currentDate.hour &&
            targetMinutes === currentDate.minute &&
            message.instances[instanceIndex].sent === false;
