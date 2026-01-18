@@ -15,6 +15,7 @@ const DISCORD_CONFIG = {
     friendshipRoleId: process.env.DISCORD_FRIENDSHIP_ROLE_ID,
     reputationRoleId: process.env.DISCORD_REPUTATION_ROLE_ID,
     guildEventsRoleId: process.env.DISCORD_GUILD_EVENTS_ROLE_ID,
+    discordSignInEventRoleId: process.env.DISCORD_SIGN_IN_EVENT_ROLE_ID
 };
 
 const WEEKDAYS = [

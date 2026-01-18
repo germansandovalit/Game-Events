@@ -57,6 +57,9 @@ const createMessageForDueEvent = (message, instanceIndex) => {
         case "Guild":
             messageToSend += `${DISCORD_CONFIG.guildEventsRoleId} `
             break;
+        case "SignInEvent":
+            messageToSend += `${DISCORD_CONFIG.discordSignInEventRoleId} `
+            break;
     }
     messageToSend += `${message.name} en ${notificationGracePeriodInMinutes} minutos`
     return messageToSend
